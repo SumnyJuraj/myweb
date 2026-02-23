@@ -1,0 +1,85 @@
+:root {
+  --bg-color: #0d0d12;
+  --card-bg: #1a1a24;
+  --accent-color: #9d4edd; /* Fialová */
+  --text-main: #e0e0e0;
+  --text-dim: #b0b0b0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.info-box {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0 8px 8px 0;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateX(5px);
+}
+
+.card.future {
+  opacity: 0.6;
+  border-left-color: #5a5a5a;
+}
+
+.date {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8em;
+  color: var(--text-dim);
+}

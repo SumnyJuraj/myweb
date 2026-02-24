@@ -1,3 +1,8 @@
+
+<!--
+git add .; git commit -m "update"; git push
+-->
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -9,32 +14,34 @@
 <body>
     <div class="container">
         <header>
-            <h1>Triedeniesssss plastového odpadu pomocou AI</h1>
+            <h1>Triedenies plastového odpadu pomocou AI</h1>
             <p class="subtitle">Bakalárska práca | 2025/2026</p>
             <div class="info-box">
                 <p><strong>Škola:</strong> FMFI UK, Bratislava</p>
+                <p><strong>Meno:</strong> Juraj Šumný</p>
                 <p><strong>Školiteľka:</strong> doc. RNDr. Zuzana Černeková, PhD.</p>
+                <p><strong>Popis témy:</strong>V súčasnosti sa intenzívne rozvíjajú technológie na triedenie odpadu s dôrazom na využitie umelej inteligencie a robotiky, ktoré umožňujú presnejšie a efektívnejšie spracovanie plastových materiálov. Táto diplomová práca sa zaoberá návrhom inteligentného triediaceho systému, ktorý využíva hyperspektrálnu analýzu na detekciu a klasifikáciu rôznych plastových komodít, čím prispieva k automatizácii a zvyšovaniu ekonomickej efektívnosti recyklačných procesov.</p>
             </div>
         </header>
 
         <section class="research-summary">
-            <h2>Aktuálny stav</h2>
+            <h2>Stav pred 19.2.</h2>
             <p>Research hotový: Porovnanie modelov z hľadiska presnosti a efektivity bez použitia hyperspektrálnej kamery.</p>
         </section>
 
         <main class="timeline">
-            <h2>Týždenný progresík</h2>
+            <h2>Týždenný progres</h2>
             
             <div class="card">
                 <div class="date">19.02. – 25.02.</div>
-                <h3>Research a analýza</h3>
-                <p>Spracovanie prehľadu existujúcich modelov (YOLO, EfficientNet) a ich limitácií pri bežnom RGB spektre.</p>
+                <h3>fastSAM vs YOLOv8</h3>
+                <p>Programovanie: Porovnanie modelov fastSAM a YOLOv8.Oba modely sú open source, ale nie sú natrénované na dátach plastového odpadu.</p>
             </div>
 
             <div class="card">
                 <div class="date">26.02. – 04.03.</div>
-                <h3>Návrh metodiky</h3>
-                <p>Definovanie testovacej sady dát a metrík pre rýchlosť inferencie.</p>
+                <h3>Hyper spektrálna kamera</h3>
+                <p>Písanie: zisťovanie ako funguje hyperpektrálna kamera a jej uplatnenie v triedení plastového odpadu</p>
             </div>
 
             <div class="card future">
@@ -47,9 +54,8 @@
         <aside class="resources">
             <h2>Zdroje</h2>
             <ul>
-                <li><a href="#">Dataset klastrovania plastov</a></li>
-                <li><a href="#">Dokumentácia YOLOv8</a></li>
-                <li><a href="#">State-of-the-art metódy v RGB segmente</a></li>
+                <li><a href="#">https://github.com/CASIA-LMC-Lab/FastSAM</a></li>
+                <li><a href="#">https://github.com/ultralytics/ultralytics</a></li>
             </ul>
         </aside>
 
